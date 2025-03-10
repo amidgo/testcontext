@@ -17,7 +17,7 @@ func Test_Context_Lookup_Assert(t *testing.T) {
 
 	inc := 0
 
-	Assert(ctx, func(t *testing.T) { inc++ })
+	Test(ctx, func(t *testing.T) { inc++ })
 
 	if inc != 1 {
 		t.Fatalf("Assert testing, invalid inc value, expected 1, actual %d", inc)

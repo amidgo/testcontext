@@ -17,7 +17,7 @@ func Lookup(ctx context.Context) (*testing.T, bool) {
 	return t, ok
 }
 
-func Assert(ctx context.Context, asrt func(t *testing.T)) {
+func Test(ctx context.Context, asrt func(t *testing.T)) {
 	t, ok := Lookup(ctx)
 	if ok {
 		asrt(t)
