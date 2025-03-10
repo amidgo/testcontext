@@ -2,7 +2,7 @@ package testcontext
 
 import "testing"
 
-func Test_Context_Lookup_Assert(t *testing.T) {
+func Test_Context_Lookup_Test(t *testing.T) {
 	ctx := Context(t)
 
 	ctxT, ok := Lookup(ctx)
